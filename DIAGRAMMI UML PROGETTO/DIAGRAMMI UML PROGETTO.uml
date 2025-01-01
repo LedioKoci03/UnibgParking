@@ -209,6 +209,23 @@ TEMPO SUPERATO&#xD;
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
     </packagedElement>
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="_npGEQMhqEe-jBbQjgq7ZNg" name="GestioneParcheggio" visibility="package">
+      <region xmi:type="uml:Region" xmi:id="_n8SGAMhqEe-jBbQjgq7ZNg" name="Region1">
+        <transition xmi:type="uml:Transition" xmi:id="_WlXBAMhrEe-jBbQjgq7ZNg" source="_-zPPoMhqEe-jBbQjgq7ZNg" target="_Kg-pIMhrEe-jBbQjgq7ZNg"/>
+        <transition xmi:type="uml:Transition" xmi:id="_vEKSMMhrEe-jBbQjgq7ZNg" name="accessoConsentito" source="_cpa1MMhrEe-jBbQjgq7ZNg" target="_qfBTEMhrEe-jBbQjgq7ZNg"/>
+        <transition xmi:type="uml:Transition" xmi:id="_wGZLQMhrEe-jBbQjgq7ZNg" name="accessoNegato" source="_dEN60MhrEe-jBbQjgq7ZNg" target="_q9TxkMhrEe-jBbQjgq7ZNg"/>
+        <transition xmi:type="uml:Transition" xmi:id="_6MuiEMhrEe-jBbQjgq7ZNg" source="_zxNQIMhrEe-jBbQjgq7ZNg" target="_dEN60MhrEe-jBbQjgq7ZNg"/>
+        <transition xmi:type="uml:Transition" xmi:id="_6_e0sMhrEe-jBbQjgq7ZNg" source="_zxNQIMhrEe-jBbQjgq7ZNg" target="_cpa1MMhrEe-jBbQjgq7ZNg"/>
+        <transition xmi:type="uml:Transition" xmi:id="_8UrGAMhrEe-jBbQjgq7ZNg" name="letturaTarga" source="_Kg-pIMhrEe-jBbQjgq7ZNg" target="_zxNQIMhrEe-jBbQjgq7ZNg"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_-zPPoMhqEe-jBbQjgq7ZNg" name="Start"/>
+        <subvertex xmi:type="uml:State" xmi:id="_Kg-pIMhrEe-jBbQjgq7ZNg" name="VerificaAccesso"/>
+        <subvertex xmi:type="uml:State" xmi:id="_cpa1MMhrEe-jBbQjgq7ZNg" name="ParcheggioValidato"/>
+        <subvertex xmi:type="uml:State" xmi:id="_dEN60MhrEe-jBbQjgq7ZNg" name="NotificaProblema"/>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_qfBTEMhrEe-jBbQjgq7ZNg" name="End"/>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_q9TxkMhrEe-jBbQjgq7ZNg" name="End"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_zxNQIMhrEe-jBbQjgq7ZNg" kind="fork"/>
+      </region>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_zEQIkMdwEe-_hqqmhjdMHg" memberEnd="_zERWssdwEe-_hqqmhjdMHg _zESk0sdwEe-_hqqmhjdMHg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zERWsMdwEe-_hqqmhjdMHg" source="org.eclipse.papyrus">
